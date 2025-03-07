@@ -5,8 +5,10 @@ This is Baixin's personal website built with HTML and CSS, hosted on GitHub Page
 这是一个用 HTML 和 CSS 构建的个人网站，托管在 GitHub Pages 上，主要用于展示我作为经济学博士生的学术成果和研究兴趣。
 
 ## Licensing / 许可
-- **Code / 代码**: The HTML and CSS code is licensed under the [MIT License](LICENSE).  
-  HTML 和 CSS 代码采用 [MIT License](LICENSE) 许可。  
+  本仓库采用 [CC BY-NC-ND 4.0](LICENSE) 许可：
+- 代码、设计和内容版权归我所有。
+- 允许引用，但必须署名（Baixin Li），禁止修改或商业使用。
+
 - **Design / 设计**: The design (layout, color scheme, etc.) is my original creation. To preserve its uniqueness, please do not directly replicate the overall design for similar websites.  
   设计（布局、配色等）是我个人原创。为了保持其独特性，请勿直接复制整体设计用于类似网站。  
 - **Content / 内容**: The content (e.g., paper, academic achievements) is my original work and copyrighted by me. You may use it, provided that proper attribution is given to me as the source. Unauthorized reproduction without credit is not permitted.  
