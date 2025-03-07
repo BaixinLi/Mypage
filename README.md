@@ -1,4 +1,4 @@
-# My Personal Homepage / 我的个人主页
+# Baixin's Personal Homepage / 我的个人主页
 
 ## Overview / 概述
 This is a personal website built with HTML and CSS, hosted on GitHub Pages, primarily used to showcase my academic achievements and research interests as an economics PhD student.  
