@@ -1,12 +1,15 @@
+/* 全局样式 */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Noto Sans SC', 'Noto Sans JP', sans-serif; /* 支持英文、中文、日文 */
     margin: 0;
     padding: 0;
     background: #ffffff;
     color: #333;
     line-height: 1.6;
+    min-width: 320px; /* 防止超小屏幕内容挤压 */
 }
 
+/* 导航栏样式 */
 nav {
     display: flex;
     justify-content: space-between;
@@ -19,35 +22,75 @@ nav {
     z-index: 1000;
 }
 
+/* 导航栏左侧姓名 */
 .nav-name {
     font-size: 1.5em;
-    font-weight: 600;
-    color: #333;
+    font-weight: 600; /* 修复：设置字体粗细 */
+    color: #333; /* 修复：颜色单独定义 */
 }
 
+/* 导航链接容器 */
+.nav-menu {
+    display: flex; /* 默认显示导航链接，确保桌面端可见 */
+}
+
+/* 导航链接列表 */
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 40px; /* 桌面端链接间距 */
 }
 
+/* 导航链接样式 */
 nav a {
     color: #666;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* 颜色和位移动画 */
 }
 
+/* 导航链接悬停效果 */
 nav a:hover {
     color: #4a90e2;
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* 向上移动3px */
 }
 
+/* 语言切换链接 */
+.lang-switch {
+    margin-left: 20px; /* 与其他导航项区分 */
+    color: #5797e0; /* 自定义颜色 */
+}
+
+/* 语言切换悬停效果 */
+.lang-switch:hover {
+    color: #2a6db0;
+}
+
+/* 汉堡图标按钮 */
+.hamburger {
+    display: none; /* 默认隐藏，仅小屏幕显示 */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+/* 汉堡图标悬停效果 */
+.hamburger:hover {
+    color: #4a90e2;
+}
+
+/* 主内容区域 */
 main {
     display: flex;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px); /* 占满剩余屏幕高度 */
+    width: 100%; /* 确保内容宽度适配屏幕 */
 }
 
+/* 左侧栏目 */
 .left-column {
     width: 30%;
     background: #f5f5f5;
@@ -56,22 +99,25 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px; /* 默认间距 */
+    gap: 20px; /* 元素间距 */
 }
 
+/* 头像样式 */
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #e6f0fa;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* 缩放动画 */
 }
 
+/* 头像悬停效果 */
 .profile-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* 放大5% */
 }
 
+/* 左侧标题 */
 .left-column h1 {
     font-size: 2.5em;
     font-weight: 600;
@@ -79,54 +125,63 @@ main {
     color: #333;
 }
 
+/* 中文姓名 */
 .left-column .chinese-name {
     font-size: 1.8em;
     font-weight: 400;
-    color: #333; /* 与 h1 颜色一致 */
-    margin: -10px 0 0; /* 减小与上方 h1 的间距 */
+    color: #333;
+    margin: -10px 0 0; /* 与上方标题间距调整 */
 }
 
+/* 左侧段落 */
 .left-column p {
     font-size: 1.2em;
     color: #666;
     margin: 0;
 }
 
+/* 社交图标容器 */
 .social-icons {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
 
+/* 社交图标链接 */
 .social-icons a {
     color: #666;
     font-size: 1.6em;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* 社交图标悬停效果 */
 .social-icons a:hover {
     color: #4a90e2;
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* 向上移动5px */
 }
 
+/* 右侧栏目 */
 .right-column {
     width: 70%;
     padding: 60px 40px;
 }
 
+/* 内容卡片 */
 .card {
     background: #ffffff;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px;
     transition: transform 0.3s ease;
-    scroll-margin-top: 60px;
+    scroll-margin-top: 60px; /* 滚动时留出导航栏空间 */
 }
 
+/* 卡片悬停效果 */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* 向上移动5px */
 }
 
+/* 卡片标题 */
 .card h2 {
     font-size: 1.5em;
     font-weight: 600;
@@ -136,28 +191,33 @@ main {
     padding-bottom: 5px;
 }
 
+/* 研究项标题 */
 .research-item h3 {
     font-size: 1.2em;
     margin: 0 0 5px;
     color: #333;
 }
 
+/* 研究项段落 */
 .research-item p {
     margin: 0 0 5px;
     color: #666;
 }
 
+/* 研究项链接 */
 .research-item a {
     color: #4a90e2;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* 研究项链接悬停效果 */
 .research-item a:hover {
     color: #2a6db0;
     text-decoration: underline;
 }
 
+/* 下载按钮 */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -169,15 +229,244 @@ main {
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
+/* 下载按钮悬停效果 */
 .btn:hover {
     background: #2a6db0;
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* 向上移动3px */
 }
 
+/* 页脚 */
 footer {
     text-align: center;
     padding: 20px;
     color: #999;
     font-size: 0.9em;
     border-top: 1px solid #e6f0fa;
+}
+
+/* 响应式设计 - 平板（max-width: 1024px） */
+@media (max-width: 1024px) {
+    /* 导航栏调整 */
+    nav {
+        padding: 7px 20px; /* 减小内边距 */
+    }
+
+    /* 导航链接间距减小 */
+    .nav-links {
+        gap: 20px; /* 平板上间距减小 */
+    }
+
+    /* 左侧和右侧栏目内边距减小 */
+    .left-column,
+    .right-column {
+        padding: 40px 20px;
+    }
+
+    /* 头像略微缩小 */
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 左侧标题略微缩小 */
+    .left-column h1 {
+        font-size: 2.2em;
+    }
+
+    /* 中文姓名略微缩小 */
+    .left-column .chinese-name {
+        font-size: 1.6em;
+    }
+
+    /* 左侧段落略微缩小 */
+    .left-column p {
+        font-size: 1.1em;
+    }
+}
+
+/* 响应式设计 - 手机（max-width: 768px） */
+@media (max-width: 768px) {
+    /* 导航栏调整 */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    /* 显示汉堡图标 */
+    .hamburger {
+        display: block; /* 小屏幕显示汉堡图标 */
+    }
+
+    /* 汉堡菜单样式 */
+    .nav-menu {
+        display: none; /* 默认隐藏 */
+        position: absolute;
+        top: 100%; /* 从导航栏下方展开 */
+        right: 0; /* 居中对齐起点 */
+        /* transform: translateX(-50%); /* 居中调整 */
+        width: max-content; /* 宽度自适应内容 */
+        background: #ffffff;
+        border-bottom: 1px solid #e6f0fa;
+        border-left: 1px solid #e6f0fa; /* 添加左侧边框 */
+        border-right: 1px solid #e6f0fa; /* 添加右侧边框 */
+        z-index: 999;
+        padding: 10px 20px; /* 增加内边距，确保文字两侧有空间 */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+        transition: opacity 0.3s ease-in-out;/* 动画样式 */
+        opacity: 0;
+    }
+
+    /* 汉堡菜单打开状态 */
+    .nav-menu.active {
+        display: block; /* 点击汉堡图标时显示 */
+        opacity: 1;
+    }
+
+    /* 导航链接垂直排列 */
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0; /* 内边距移到 .nav-menu */
+        align-items: flex-start; /* 左侧对齐 */
+    }
+
+    /* 导航链接字体缩小 */
+    nav a {
+        font-size: 1em;
+    }
+
+    /* 语言切换链接调整 */
+    .lang-switch {
+        margin-left: 0;
+    }
+
+    /* 主内容垂直排列 */
+    main {
+        flex-direction: column;
+    }
+
+    /* 左右栏目宽度占满 */
+    .left-column,
+    .right-column {
+        width: 100%;
+        padding: 20px 15px; /* 减小内边距 */
+    }
+
+    /* 左侧栏目底部间距 */
+    .left-column {
+        padding-bottom: 0;
+    }
+
+    /* 头像缩小 */
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* 左侧标题缩小 */
+    .left-column h1 {
+        font-size: 1.8em;
+    }
+
+    /* 中文姓名缩小 */
+    .left-column .chinese-name {
+        font-size: 1.4em;
+    }
+
+    /* 左侧段落缩小 */
+    .left-column p {
+        font-size: 1em;
+    }
+
+    /* 社交图标间距 */
+    .social-icons {
+        gap: 15px;
+    }
+
+    /* 社交图标大小缩小 */
+    .social-icons a {
+        font-size: 1.4em;
+    }
+
+    /* 卡片标题缩小 */
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    /* 研究项标题缩小 */
+    .research-item h3 {
+        font-size: 1.1em;
+    }
+
+    /* 研究项段落缩小 */
+    .research-item p {
+        font-size: 0.9em;
+    }
+
+    /* 下载按钮调整 */
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* 超小屏幕（max-width: 480px） */
+@media (max-width: 480px) {
+    /* 导航栏姓名缩小 */
+    .nav-name {
+        font-size: 1.2em;
+    }
+
+    /* 导航链接字体进一步缩小 */
+    nav a {
+        font-size: 0.8em;
+    }
+
+    /* 头像进一步缩小 */
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* 左侧标题进一步缩小 */
+    .left-column h1 {
+        font-size: 1.5em;
+    }
+
+    /* 中文姓名进一步缩小 */
+    .left-column .chinese-name {
+        font-size: 1.2em;
+    }
+
+    /* 左侧段落进一步缩小 */
+    .left-column p {
+        font-size: 0.9em;
+    }
+
+    /* 社交图标进一步缩小 */
+    .social-icons a {
+        font-size: 1.2em;
+    }
+
+    /* 卡片标题进一步缩小 */
+    .card h2 {
+        font-size: 1.1em;
+    }
+
+    /* 研究项标题进一步缩小 */
+    .research-item h3 {
+        font-size: 1em;
+    }
+
+    /* 研究项段落进一步缩小 */
+    .research-item p {
+        font-size: 0.8em;
+    }
+
+    /* 下载按钮进一步缩小 */
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
 }
