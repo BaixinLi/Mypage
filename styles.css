@@ -25,7 +25,7 @@ nav {
 /* 导航栏左侧姓名 */
 .nav-name {
     font-size: 1.5em;
-    font-weight: 600; /* 修复：设置字体粗细 */
+    font-weight: 800; /* 修复：设置字体粗细 */
     color: #333; /* 修复：颜色单独定义 */
 }
 
@@ -44,13 +44,13 @@ nav {
 nav a {
     color: #666;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
+    font-weight: 800;
+    font-size: 1.5em;
     transition: color 0.3s ease, transform 0.3s ease; /* 颜色和位移动画 */
 }
 
 /* 导航链接悬停效果 */
-nav a:hover {
+nav a: hover {
     color: #4a90e2;
     transform: translateY(-3px); /* 向上移动3px */
 }
@@ -79,7 +79,7 @@ nav a:hover {
 }
 
 /* 汉堡图标悬停效果 */
-.hamburger:hover {
+.hamburger: hover {
     color: #4a90e2;
 }
 
@@ -212,7 +212,7 @@ main {
 }
 
 /* 研究项链接悬停效果 */
-.research-item a:hover {
+.research-item a: hover {
     color: #2a6db0;
     text-decoration: underline;
 }
