@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李佰鑫 | 个人主页</title>
     <link rel="stylesheet" href="../styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-name">李佰鑫</div>
+        <a href="#" class="nav-name" id="scroll-to-top">李佰鑫</a>
         <button class="hamburger" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i> <!-- Font Awesome 汉堡图标 -->
         </button>
         <div class="nav-menu">
         <div class="nav-links">
-            <a href="#home">首页</a>
+            <a href="#news">动态</a>
             <a href="#about">关于我</a>
-            <a href="#research">研究</a>
+            <a href="#projects">研究</a>
+            <a href="#publications">论文</a>
             <a href="#cv">简历</a>
             <a href="#contact">联系方式</a>
             <a href="../index.html" class="lang-switch">English</a> <!-- 更新为根目录 --><!-- 跳转到英文版 -->
@@ -37,11 +38,17 @@
             <p class="chinese-name">李佰鑫</p>
             <p>早稲田大学经济学研究科博士学生</p>
             <div class="social-icons">
+                <a href="mailto:libaixin@akane.waseda.jp" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
                 <a href="https://github.com/BaixinLi" target="_blank" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://orcid.org/0000-0002-6949-7639" target="_blank" title="ORCID">
                     <i class="fa-brands fa-orcid"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Baixin-Li-2" target="_blank" title="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
                 </a>
                 <a href="https://linkedin.com/in/baixinli" target="_blank" title="LinkedIn">
                     <i class="fa-brands fa-linkedin"></i>
@@ -52,19 +59,37 @@
         <div class="right-column">
             <section id="home" class="card">
                 <h2>欢迎</h2>
-                <p>你好，我是李佰鑫，早稲田大学经济学研究科的博士候选人。我的研究方向包括投入产出分析、废物回收，以及最近的日本都道府县投入产出表的估算。</p>
+                <p>你好，我是李佰鑫，早稲田大学经济学研究科的博士学生。我的研究方向包括投入产出分析、废弃物回收。最近在研究日本都道府县投入产出表的估算。</p>
             </section>
             <!-- 其他部分类似翻译 -->
+            <section id="news" class="card">
+                <h2>动态</h2>
+                <div class="news-item">
+                    <p><strong>2025年3月:</strong> 自2025年4月起,我将担任早稻田大学政治经济学术院助手。</p>
+                </div>
+            </section>
             <section id="about" class="card">
                 <h2>关于我</h2>
                 <p><strong>姓名:</strong> 李佰鑫</p>
                 <p><strong>职位:</strong> 博士学生</p>
                 <p><strong>机构:</strong> 早稻田大学经济学研究科博士课程</p>
-                <p><strong>研究方向:</strong> 投入产出分析, 废弃物回收处理, 日本的非竞争型投入产出表的推算方法</p>
+                <p><strong>研究方向:</strong> 投入产出分析, 废弃物回收处理, 循環経済</p>
+                <p> <i class="fa-brands fa-orcid"></i> <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-6949-7639">https://orcid.org/0000-0002-6949-7639</a></p>
+                <p> <i class='fa-brands fa-researchgate'></i> </i> <strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Baixin-Li-2">https://www.researchgate.net/profile/Baixin-Li-2</a></p>
+                <p> <i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/BaixinLi">https://github.com/BaixinLi</a></p>
+                <p> <i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/baixinli">https://linkedin.com/in/baixinli</a></p>
             </section>
 
-            <section id="research" class="card">
+            <section id="projects" class="card">
                 <h2>研究</h2>
+                <div class="research-item">
+                    <h3>A Non-survey Method to Estimate Japan’s Prefectural Non-competitive Import Type Input-Output Table with Scrap and By-products</h3>
+                    <p>Baixin Li, and Yasushi Kondo (2024). <em>The 16th Biennial International Conference on EcoBalance (EcoBalance 2024)</em> by the Institute of Life Cycle Assessment Japan, Sendai, Japan, November, 2024.</p>
+                </div>
+            </section>
+                
+            <section id="publications" class="card">
+                <h2>论文</h2>
                 <div class="research-item">
                     <h3>Integrated Assessment of Environmental, Economic, and Social Impacts of Waste Plastic Recycling in Japan (in Japanese)</h3>
                     <p>Baixin LI, Qinxuan LI, Yiyuan XING, Yasushi KONDO (2023). <em>Journal of Life Cycle Assessment, Japan Vol.19 No.3</em>, p. 169-186. <a href="https://doi.org/10.3370/lca.19.169" target="_blank">https://doi.org/10.3370/lca.19.169</a></p>
@@ -79,13 +104,14 @@
             <section id="cv" class="card">
                 <h2>简历</h2>
                 <p>请下载查看我的完整简历：</p>
-                <a href="cv.pdf" download="BaixinLi_CV.pdf" class="btn">下载 CV</a>
+                <!-- <a href="../cv.pdf" download="BaixinLi_CV.pdf" class="btn">下载 CV</a> -->
+                <a href="../cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">下载 CV</a>
             </section>
 
             <section id="contact" class="card">
                 <h2>联系方式</h2>
-                <p><strong>邮件:</strong> libaixin@akane.waseda.jp</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
+                <p><strong>邮件: </strong> <a href="mailto:libaixin@akane.waseda.jp">libaixin@akane.waseda.jp</a></p>
+                <p><strong>GitHub: </strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
             </section>
         </div>
     </main>
@@ -94,7 +120,7 @@
         <p>© 2025 李佰鑫</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
@@ -110,8 +136,34 @@
                     navMenu.classList.remove('active');
                 });
             });
+
+            // 点击页面其他区域关闭菜单
+            document.addEventListener('click', function (e) {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                }
+            });
+
+            // 为所有外部链接和特定相对路径链接（如 CV 链接）添加 target="_blank" 和 rel="noopener noreferrer"
+            document.querySelectorAll('a[href^="http"], a[href^="https"], a[href$=".pdf"]').forEach(link => {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+                // 如果有 download 属性，移除它（可选）
+                // link.removeAttribute('download');
+            });
+
+            // 点击“Baixin Li”跳转到页面顶部
+            const scrollToTop = document.querySelector('#scroll-to-top');
+            if (scrollToTop) {
+                scrollToTop.addEventListener('click', function (e) {
+                    e.preventDefault(); // 防止默认跳转行为
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' // 平滑滚动
+                    });
+                });
+            }
         });
     </script>
-
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91d15edd5db4d538',t:'MTc0MTQyNjgyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

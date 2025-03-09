@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baixin Li | Homepage</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- 引入 Font Awesome 图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-name">Baixin Li</div>
+        <a href="#" class="nav-name" id="scroll-to-top">Baixin Li</a>
         <button class="hamburger" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i> <!-- Font Awesome 汉堡图标 -->
         </button>
         <div class="nav-menu">
         <div class="nav-links">
-            <a href="#home">Home</a>
+            <!-- <a href="#home">Home</a>> -->
+            <a href="#news">News</a>
             <a href="#about">About</a>
-            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
             <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
             <a href="jp/index.html" class="lang-switch">日本語</a>  <!-- 日文 -->
@@ -42,11 +44,18 @@
                 <!-- <a href="https://scholar.google.com/citations?user=your-id" target="_blank" title="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
                 </a> -->
+
+                <a href="mailto:libaixin@akane.waseda.jp" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
                 <a href="https://github.com/BaixinLi" target="_blank" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://orcid.org/0000-0002-6949-7639" target="_blank" title="ORCID">
                     <i class="fa-brands fa-orcid"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Baixin-Li-2" target="_blank" title="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
                 </a>
                 <!-- <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter">
                     <i class="fa-brands fa-twitter"></i>
@@ -64,16 +73,35 @@
                 <p>Hi, I’m Baixin Li, a PhD candidate at Waseda University’s Graduate School of Economics. My research focuses on input-output analysis, waste recycling, and recently, estimating prefectural input-output tables in Japan.</p>
             </section>
 
+            <section id="news" class="card">
+                <h2>News</h2>
+                <div class="news-item">
+                    <p><strong>March 2025:</strong> Starting from April 2025, I will serve as a research assistant at the Faculty of Political Science and Economics, Waseda University.</p>
+                </div>
+            </section>
+
             <section id="about" class="card">
                 <h2>About Me</h2>
                 <p><strong>Name:</strong> Baixin Li</p>
                 <p><strong>Position:</strong> PhD Candidate</p>
                 <p><strong>Institution:</strong> Graduate School of Economics, Waseda University</p>
-                <p><strong>Interests:</strong> Input-Output Analysis, Waste Recycling, Prefectural Input-Output Tables</p>
+                <p><strong>Interests:</strong> Input-Output Analysis, Waste Recycling, Prefectural Input-Output Tables, Circular Economy</p>
+                <p> <i class="fa-brands fa-orcid"></i> <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-6949-7639">https://orcid.org/0000-0002-6949-7639</a></p>
+                <p> <i class='fa-brands fa-researchgate'></i> </i> <strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Baixin-Li-2">https://www.researchgate.net/profile/Baixin-Li-2</a></p>
+                <p> <i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/BaixinLi">https://github.com/BaixinLi</a></p>
+                <p> <i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/baixinli">https://linkedin.com/in/baixinli</a></p>
             </section>
 
-            <section id="research" class="card">
-                <h2>Research</h2>
+            <section id="projects" class="card">
+                <h2>Projects on going</h2>
+                <div class="research-item">
+                    <h3>A Non-survey Method to Estimate Japan’s Prefectural Non-competitive Import Type Input-Output Table with Scrap and By-products</h3>
+                    <p>Baixin Li, and Yasushi Kondo (2024). <em>The 16th Biennial International Conference on EcoBalance (EcoBalance 2024)</em> by the Institute of Life Cycle Assessment Japan, Sendai, Japan, November, 2024.</p>
+                </div>
+            </section>
+
+            <section id="publications" class="card">
+                <h2>Publications</h2>
                 <div class="research-item">
                     <h3>Integrated Assessment of Environmental, Economic, and Social Impacts of Waste Plastic Recycling in Japan (in Japanese)</h3>
                     <p>Baixin LI, Qinxuan LI, Yiyuan XING, Yasushi KONDO (2023). <em>Journal of Life Cycle Assessment, Japan Vol.19 No.3</em>, p. 169-186. <a href="https://doi.org/10.3370/lca.19.169" target="_blank">https://doi.org/10.3370/lca.19.169</a></p>
@@ -88,13 +116,15 @@
             <section id="cv" class="card">
                 <h2>CV</h2>
                 <p>Check out my full CV below:</p>
-                <a href="cv.pdf" download="BaixinLi_CV.pdf" class="btn">Download CV</a>
+                <!-- <a href="cv.pdf" download="BaixinLi_CV.pdf" class="btn">Download CV</a> -->
+                <a href="cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
             </section>
 
             <section id="contact" class="card">
                 <h2>Contact</h2>
-                <p><strong>Email:</strong> libaixin@akane.waseda.jp</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
+                <p><strong>Email: </strong> <a href="mailto:libaixin@akane.waseda.jp">libaixin@akane.waseda.jp</a></p>
+                
+                <p><strong>GitHub: </strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
             </section>
         </div>
     </main>
@@ -104,7 +134,7 @@
         <p>© 2025 Baixin Li</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
@@ -128,8 +158,27 @@
                     navMenu.classList.remove('active');
                 }
             });
+
+            // 为所有外部链接和特定相对路径链接（如 CV 链接）添加 target="_blank" 和 rel="noopener noreferrer"
+            document.querySelectorAll('a[href^="http"], a[href^="https"], a[href$=".pdf"]').forEach(link => {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+                // 如果有 download 属性，移除它（可选）
+                // link.removeAttribute('download');
+            });
+
+            // 点击“Baixin Li”跳转到页面顶部
+            const scrollToTop = document.querySelector('#scroll-to-top');
+            if (scrollToTop) {
+                scrollToTop.addEventListener('click', function (e) {
+                    e.preventDefault(); // 防止默认跳转行为
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' // 平滑滚动
+                    });
+                });
+            }
         });
     </script>
-
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91d15edd5db4d538',t:'MTc0MTQyNjgyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
