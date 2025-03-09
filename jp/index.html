@@ -13,15 +13,16 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-name">李佰鑫</div>
+        <a href="#" class="nav-name" id="scroll-to-top">り ばいしん</a>
         <button class="hamburger" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i> <!-- Font Awesome 汉堡图标 -->
         </button>
         <div class="nav-menu">
         <div class="nav-links">
-            <a href="#home">ホーム</a>
+            <a href="#news">ニュース</a>
             <a href="#about">自己紹介</a>
-            <a href="#research">研究</a>
+            <a href="#projects">研究</a>
+            <a href="#publications">論文</a>
             <a href="#cv">履歴書</a>
             <a href="#contact">連絡先</a>
             <a href="../index.html" class="lang-switch">English</a> <!-- 更新为根目录 --> <!-- 英文 -->
@@ -33,15 +34,21 @@
     <main>
         <div class="left-column">
             <img src="../images/profile.jpg" alt="プロフィール" class="profile-img">
-            <h1>リ　バイシン</h1>
-            <p class="chinese-name">李　佰鑫</p>
+            <h1>リ バイシン</h1>
+            <p class="chinese-name">李 佰鑫</p>
             <p>早稲田大学経済学研究科博士課程</p>
             <div class="social-icons">
+                <a href="mailto:libaixin@akane.waseda.jp" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
                 <a href="https://github.com/BaixinLi" target="_blank" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://orcid.org/0000-0002-6949-7639" target="_blank" title="ORCID">
                     <i class="fa-brands fa-orcid"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Baixin-Li-2" target="_blank" title="ResearchGate">
+                    <i class="fa-brands fa-researchgate"></i>
                 </a>
                 <a href="https://linkedin.com/in/baixinli" target="_blank" title="LinkedIn">
                     <i class="fa-brands fa-linkedin"></i>
@@ -55,46 +62,61 @@
                 <p>こんにちは、李佰鑫（リ・バイシン）です。早稲田大学経済学研究科の博士課程に在籍しています。私の研究は産業連関分析、廃棄物リサイクル、そして最近では日本の都道府県別産業連関表の推計に焦点を当てています。</p>
             </section>
             <!-- 其他部分类似翻译 -->
+            <section id="news" class="card">
+                <h2>ニュース</h2>
+                <div class="news-item">
+                    <p><strong>2025年3月:</strong> 2025年4月より早稲田大学政治経済学術院の助手として勤務することになります。</p>
+                </div>
+            </section>
+
             <section id="about" class="card">
                 <h2>自己紹介</h2>
                 <p><strong>名前:</strong> リ　バイシン</p>
                 <p><strong>ポジション:</strong> 博士学生</p>
                 <p><strong>所属機関:</strong> 早稲田大学経済学研究科博士課程</p>
-                <p><strong>研究分野:</strong> 産業連関分析, 廃棄物回収処理, 都道府県の非競争輸入型産業連関表</p>
+                <p><strong>研究分野:</strong> 産業連関分析, 廃棄物回収処理, 都道府県の非競争輸入型産業連関表, 循環型経済</p>
+                <p> <i class="fa-brands fa-orcid"></i> <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-6949-7639">https://orcid.org/0000-0002-6949-7639</a></p>
+                <p> <i class='fa-brands fa-researchgate'></i> </i> <strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Baixin-Li-2">https://www.researchgate.net/profile/Baixin-Li-2</a></p>
+                <p> <i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/BaixinLi">https://github.com/BaixinLi</a></p>
+                <p> <i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/baixinli">https://linkedin.com/in/baixinli</a></p>
             </section>
 
-            <section id="research" class="card">
+            <section id="projects" class="card">
                 <h2>研究</h2>
+                <div class="research-item">
+                    <h3>A Non-survey Method to Estimate Japan’s Prefectural Non-competitive Import Type Input-Output Table with Scrap and By-products</h3>
+                    <p>Baixin Li, and Yasushi Kondo (2024). <em>The 16th Biennial International Conference on EcoBalance (EcoBalance 2024)</em> by the Institute of Life Cycle Assessment Japan, Sendai, Japan, November, 2024.</p>
+                </div>
+            </section>
+
+            <section id="publications" class="card">
+                <h2>論文</h2>
                 <div class="research-item">
                     <h3>日本における廃プラスチックリサイクルの環境･経済･社会影響の統合的評価</h3>
                     <p>李佰鑫, 李勤萱, 幸怡媛, 近藤康之 (2023). <em>日本LCA学会誌 Vol.19 No.3</em>, p. 169-186. <a href="https://doi.org/10.3370/lca.19.169" target="_blank">https://doi.org/10.3370/lca.19.169</a></p>
                 </div>
-                <!-- <div class="research-item">
-                    <h3>Paper Title 2</h3>
-                    <p>Baixin Li, et al. <em>Journal 2022</em></p>
-                    <a href="https://doi.org/xxx" target="_blank">DOI</a>
-                </div> -->
             </section>
 
             <section id="cv" class="card">
                 <h2>履歴書</h2>
                 <p>以下、私の履歴書をご覧ください：</p>
-                <a href="cv.pdf" download="BaixinLi_CV.pdf" class="btn">Download CV</a>
+                <a href="../cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">CVをダウンロード</a>
+ 
             </section>
 
             <section id="contact" class="card">
                 <h2>連絡先</h2>
-                <p><strong>Email:</strong> libaixin@akane.waseda.jp</p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
+                <p><strong>Email: </strong> <a href="mailto:libaixin@akane.waseda.jp">libaixin@akane.waseda.jp</a></p>
+                <p><strong>GitHub: </strong> <a href="https://github.com/BaixinLi">github.com/BaixinLi</a></p>
             </section>
         </div>
     </main>
 
     <footer>
-        <p>© 2025 リ　バイシン</p>
+        <p>© 2025 リ バイシン</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.querySelector('.nav-menu');
@@ -110,8 +132,34 @@
                     navMenu.classList.remove('active');
                 });
             });
+
+            // 点击页面其他区域关闭菜单
+            document.addEventListener('click', function (e) {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    navMenu.classList.remove('active');
+                }
+            });
+
+            // 为所有外部链接和特定相对路径链接（如 CV 链接）添加 target="_blank" 和 rel="noopener noreferrer"
+            document.querySelectorAll('a[href^="http"], a[href^="https"], a[href$=".pdf"]').forEach(link => {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+                // 如果有 download 属性，移除它（可选）
+                // link.removeAttribute('download');
+            });
+
+            // 点击“Baixin Li”跳转到页面顶部
+            const scrollToTop = document.querySelector('#scroll-to-top');
+            if (scrollToTop) {
+                scrollToTop.addEventListener('click', function (e) {
+                    e.preventDefault(); // 防止默认跳转行为
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' // 平滑滚动
+                    });
+                });
+            }
         });
     </script>
-
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91d15edd5db4d538',t:'MTc0MTQyNjgyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
