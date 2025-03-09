@@ -24,7 +24,7 @@ a {
     transition: color 0.3s ease;
 }
 
-a: hover {
+a:hover {
     color: #2a6db0;
 }
 
@@ -48,6 +48,7 @@ nav {
     font-weight: 400; /* 修复：设置字体粗细 */
     color: #333; /* 修复：颜色单独定义 */
 }
+
 
 /* 优化“Baixin Li”的点击样式 */
 .nav-name {
@@ -77,7 +78,7 @@ nav a {
     color: #666;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: color 0.3s ease, transform 0.3s ease; /* 颜色和位移动画 */
 }
 
