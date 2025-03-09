@@ -24,7 +24,7 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover {
+a: hover {
     color: #2a6db0;
 }
 
@@ -45,7 +45,7 @@ nav {
 /* 导航栏左侧姓名 */
 .nav-name {
     font-size: 1.1em;
-    font-weight: 100; /* 修复：设置字体粗细 */
+    font-weight: 300; /* 修复：设置字体粗细 */
     color: #333; /* 修复：颜色单独定义 */
 }
 
@@ -76,8 +76,8 @@ nav {
 nav a {
     color: #666;
     text-decoration: none;
-    font-weight: 100;
-    font-size: 1em;
+    font-weight: 300;
+    font-size: 1.1em;
     transition: color 0.3s ease, transform 0.3s ease; /* 颜色和位移动画 */
 }
 
