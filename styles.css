@@ -45,7 +45,7 @@ nav {
 /* 导航栏左侧姓名 */
 .nav-name {
     font-size: 1.1em;
-    font-weight: 300; /* 修复：设置字体粗细 */
+    font-weight: 400; /* 修复：设置字体粗细 */
     color: #333; /* 修复：颜色单独定义 */
 }
 
@@ -76,7 +76,7 @@ nav {
 nav a {
     color: #666;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.1em;
     transition: color 0.3s ease, transform 0.3s ease; /* 颜色和位移动画 */
 }
